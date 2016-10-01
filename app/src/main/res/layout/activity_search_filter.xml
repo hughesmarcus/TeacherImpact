@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id = "@+id/searchFilter"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/colorAccentWhite"
+    android:animateLayoutChanges="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccentBlue"
+        android:id="@+id/searchFilterLayout"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:background="@color/colorPrimary"
+            android:layout_marginLeft="5dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/search_filter1"
+                    android:id="@+id/checkBox1"
+                    android:layout_marginLeft="10dp"
+                    android:checked="true"
+                    android:onClick="checkAll"
+                    android:textSize="18sp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/search_filter2"
+                    android:id="@+id/checkBox2"
+                    android:layout_marginLeft="10dp"
+                    android:onClick="check"
+                    android:textSize="18sp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/search_filter3"
+                    android:id="@+id/checkBox3"
+                    android:layout_marginLeft="10dp"
+                    android:onClick="check"
+                    android:textSize="18sp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/search_filter4"
+                    android:id="@+id/checkBox4"
+                    android:layout_marginLeft="10dp"
+                    android:onClick="check"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp">
+
+                <Spinner
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spinnerState"
+                    android:layout_marginTop="10dp" />
+
+                <EditText
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textCity"
+                    android:hint="@string/search_filter11"
+                    android:textSize="18sp"
+                    android:inputType="text"
+                    android:imeOptions="actionSearch" />
+
+                <EditText
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:id="@+id/textZip"
+                    android:hint="@string/search_filter9"
+                    android:textSize="18sp"
+                    android:inputType="number"
+                    android:imeOptions="actionSearch"
+                    android:layout_marginBottom="10dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:text="Update"
+            android:id="@+id/updateButton"
+            android:background="@color/colorAccentBlue"
+            android:startColor="@color/colorAccentBlue"
+            android:endColor="@color/colorPrimary"
+            android:textColor="@color/colorPrimary"
+            android:layout_gravity="center_horizontal" />
+
+    </LinearLayout>
+
+    <ListView android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+        android:dividerHeight="0dp"
+        android:divider="@null">
+    </ListView>
+
+</LinearLayout>

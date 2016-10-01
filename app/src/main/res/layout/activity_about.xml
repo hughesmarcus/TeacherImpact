@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/colorPrimary">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="top|center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/about_image"
+            android:src="@drawable/teacherimpact_logo_black"
+            android:layout_gravity="center"
+            android:background="@color/colorPrimary"
+            android:clickable="true"
+            android:contextClickable="false" />
+
+    </FrameLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/horizontalScrollView2" >
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:rowCount="1"
+            android:layout_gravity="center"
+            android:alignmentMode="alignBounds"
+            android:background="@color/colorPrimary"
+            android:columnOrderPreserved="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp">
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/aboutus_button"
+                android:id="@+id/button_aboutUs"
+                android:layout_gravity="left|center"
+                android:layout_columnWeight="1"
+                android:textColor="@color/colorAccentBlue" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/teachers_button"
+                android:id="@+id/button_teachers"
+                android:layout_gravity="center"
+                android:layout_columnWeight="1"
+                android:textColor="@color/colorAccentBlue" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/studentParent_button"
+                android:id="@+id/button_parentStudent"
+                android:layout_gravity="center|right"
+                android:layout_columnWeight="1"
+                android:textColor="@color/colorAccentBlue" />
+        </GridLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/tv_about_header"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimary"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/colorAccentBlue"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp" />
+
+    <ListView android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/about_listview"
+        android:dividerHeight="0dp"
+        android:divider="@null"
+        android:background="@color/colorPrimary"
+        android:layout_gravity="bottom">
+    </ListView>
+
+</LinearLayout>

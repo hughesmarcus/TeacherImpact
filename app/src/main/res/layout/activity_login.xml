@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.ActivityLogin"
+    android:background="@color/colorPrimary"
+    android:id="@+id/login_container">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="100dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/teacherimpact_logo_black"
+            android:contentDescription="@string/images_teacher_impact_logo"
+            android:id="@+id/login_imageLogo"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/login_inputEmail"
+            android:hint="@string/login_email"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/colorAccentGray"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/login_inputPassword"
+            android:paddingTop="20dp"
+            android:hint="@string/login_password"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/colorAccentGray"
+            android:imeOptions="actionGo"
+            android:inputType="textPassword" />
+
+        <Button
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:text="@string/login_button"
+            android:id="@+id/login_buttonSignIn"
+            android:background="@color/colorAccentLightBlue"
+            android:onClick="checkValid"
+            android:layout_gravity="center"
+            android:textSize="14sp"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp" />
+
+        <Button
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:text="@string/login_button_signup"
+            android:id="@+id/login_buttonSignUp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/colorAccentBlue"
+            android:textColor="@color/colorPrimary" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:text="@string/aboutus_button"
+                android:id="@+id/login_aboutUs"
+                android:background="@color/colorAccentGray"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:clickable="true"
+                android:onClick="checkValid"
+                android:textSize="12sp"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:text="@string/login_forgotPassword"
+                android:id="@+id/login_textForgotPassword"
+                android:background="@color/colorAccentGray"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:textColor="@color/colorPrimary"
+                android:contextClickable="false" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

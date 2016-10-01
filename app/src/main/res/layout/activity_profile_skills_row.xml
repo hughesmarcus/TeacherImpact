@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:background="@color/colorPrimary"
+    android:descendantFocusability="blocksDescendants">
+
+    <TableRow android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:background="@color/colorPrimary"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:baselineAligned="false"
+        android:layout_marginBottom="5dp"
+        android:descendantFocusability="blocksDescendants">
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:id="@+id/endorse_button"
+            android:layout_gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:clickable="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/endorse_count"
+            android:background="@drawable/round_rectangle_blue"
+            android:minWidth="40dp"
+            android:layout_gravity="center"
+            android:minHeight="40dp"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/skill_name"
+            android:background="@drawable/round_rectangle_gray"
+            android:minWidth="40dp"
+            android:textAlignment="gravity"
+            android:layout_gravity="center"
+            android:minHeight="40dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginLeft="5dp"
+            android:capitalize="characters"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:clickable="false"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="fill_horizontal" />
+    </TableRow>
+</TableLayout>

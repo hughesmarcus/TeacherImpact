@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/profile_tp_label"
+                android:id="@+id/update_tp_label"
+                android:textStyle="bold"
+                android:textColor="@color/colorAccentBlue"
+                android:visibility="gone"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/update_teacher_philosophy"
+                android:inputType="textCapSentences|textAutoCorrect|textMultiLine"
+                android:visibility="gone"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/profile_cb_label"
+                android:id="@+id/update_cb_label"
+                android:textStyle="bold"
+                android:textColor="@color/colorAccentBlue"
+                android:visibility="gone"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/update_career_background"
+                android:inputType="textCapSentences|textAutoCorrect|textMultiLine"
+                android:visibility="gone"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/profile_xp_label"
+                android:id="@+id/update_ex_label"
+                android:textStyle="bold"
+                android:textColor="@color/colorAccentBlue"
+                android:visibility="gone"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/update_experience"
+                android:inputType="textCapSentences|textAutoCorrect|textMultiLine"
+                android:visibility="gone"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/profile_skills_label"
+                android:id="@+id/update_skills_label"
+                android:textStyle="bold"
+                android:textColor="@color/colorAccentBlue"
+                android:visibility="gone"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/update_skills"
+                android:inputType="textCapSentences|textAutoCorrect|textMultiLine"
+                android:visibility="gone"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/profile_cert_label"
+                android:id="@+id/update_cert_label"
+                android:textStyle="bold"
+                android:textColor="@color/colorAccentBlue"
+                android:visibility="gone"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/update_certifications"
+                android:inputType="textCapSentences|textAutoCorrect|textMultiLine"
+                android:visibility="gone"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/profile_awards_label"
+                android:id="@+id/update_awd_label"
+                android:textStyle="bold"
+                android:textColor="@color/colorAccentBlue"
+                android:visibility="gone"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/update_awards"
+                android:inputType="textCapSentences|textAutoCorrect|textMultiLine"
+                android:visibility="gone"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/profile_bio_label"
+                android:id="@+id/update_bio_label"
+                android:textStyle="bold"
+                android:textColor="@color/colorAccentBlue"
+                android:visibility="gone"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/update_biography"
+                android:inputType="textCapSentences|textAutoCorrect|textMultiLine"
+                android:visibility="gone"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/profile_grade_label"
+                android:id="@+id/update_grade_label"
+                android:textStyle="bold"
+                android:textColor="@color/colorAccentBlue"
+                android:visibility="gone"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/update_grade_level"
+                android:visibility="gone"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/profile_learning_strengths_label"
+                android:id="@+id/update_learning_strengths_label"
+                android:textStyle="bold"
+                android:textColor="@color/colorAccentBlue"
+                android:visibility="gone"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/update_learning_strengths"
+                android:inputType="textCapSentences|textAutoCorrect|textMultiLine"
+                android:visibility="gone"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/profile_learning_weaknesses_label"
+                android:id="@+id/update_learning_weaknesses_label"
+                android:textStyle="bold"
+                android:textColor="@color/colorAccentBlue"
+                android:visibility="gone"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/update_learning_weaknesses"
+                android:inputType="textCapSentences|textAutoCorrect|textMultiLine"
+                android:visibility="gone"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/profile_interests_label"
+                android:id="@+id/update_interests_label"
+                android:textStyle="bold"
+                android:textColor="@color/colorAccentBlue"
+                android:visibility="gone"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/update_interests"
+                android:inputType="textCapSentences|textAutoCorrect|textMultiLine"
+                android:visibility="gone"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Update Profile Image"
+                android:id="@+id/Update_image"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/colorAccentBlue" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/profile_update_info"
+                android:id="@+id/profile_update_button"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/colorAccentBlue" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableRow android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:minHeight="125dp"
+        android:background="@color/colorPrimary"
+        android:baselineAligned="false"
+        android:layout_margin="5dp">
+
+        <ImageView
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:id="@+id/search_spacer"
+            android:background="@color/colorAccentBlue"
+            android:contentDescription="@string/images_spacer" />
+
+        <ImageView
+            android:id="@+id/search_imageProfile"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:contentDescription="@string/images_profile_default"
+            android:layout_margin="10dp" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/search_textName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorAccentGray"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/search_textInfo1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:textSize="12sp"
+                android:textColor="@color/colorAccentGray" />
+
+            <TextView
+                android:id="@+id/search_textInfo2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:textSize="12sp"
+                android:textColor="@color/colorAccentGray" />
+
+            <TextView
+                android:id="@+id/search_textInfo3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:textSize="12sp"
+                android:textColor="@color/colorAccentGray" />
+        </LinearLayout>
+
+    </TableRow>
+</TableLayout>

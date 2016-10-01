@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="240dp"
+    android:background="@color/colorAccentGray"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Activities.ActivityMain">>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@color/colorAccentGray">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="25dp"
+            android:src="@mipmap/ic_default_profile_image"
+            android:id="@+id/navigation_imageProfileCircle"
+            android:layout_marginLeft="15dp" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/nav_header_vertical_spacing"
+                android:text="@string/navigation_name"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/navigation_textName"
+                android:textColor="@color/colorAccentLightBlue"
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:id="@+id/navigation_textEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/navigation_email"
+                android:textSize="10sp"
+                android:textColor="@color/colorAccentLightBlue"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/navigation_imageProfile"
+        android:visibility="gone"
+        android:contentDescription="@string/images_profile_default" />
+
+</FrameLayout>
